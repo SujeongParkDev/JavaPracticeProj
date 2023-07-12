@@ -1,7 +1,5 @@
 package ch03.course03;
 
-import ch03.course03.Customer;
-
 public class VIPCustomer extends Customer {
 
 	private String agentID;			// 담당전문상담원ID
