@@ -13,6 +13,7 @@ class Animal {
 }
 
 class Human extends Animal {
+	@Override
 	public void move () {
 		System.out.println("사람이 두 발로 걷습니다.");
 	}
@@ -23,6 +24,7 @@ class Human extends Animal {
 }
 
 class Tiger extends Animal {
+	@Override
 	public void move () {
 		System.out.println("호랑이가 네 발로 뜁니다.");
 	}
@@ -33,6 +35,7 @@ class Tiger extends Animal {
 }
 
 class Eagle extends Animal {
+	@Override
 	public void move () {
 		System.out.println("독수리가 하늘을 날아갑니다.");
 	}
@@ -54,6 +57,7 @@ public class AnimalTest {
 		test.moveAnimal(tAnimal);
 		test.moveAnimal(eAnimal);
 		
+		/*
 		ArrayList<Animal> animalList = new ArrayList<Animal>();
 		animalList.add(hAnimal);
 		animalList.add(tAnimal);
@@ -62,6 +66,7 @@ public class AnimalTest {
 		for (Animal animal : animalList) {
 			animal.move();
 		}
+		*/
 	}
 	
 	public void moveAnimal (Animal animal) {
